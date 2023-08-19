@@ -1,0 +1,26 @@
+
+Rekèt
+- select *from tasks;
+-select *from tasks where statue = 'pending';
+-select *from tasks where due_date >='2023-08-25';
+-select *from tasks where statue = 'completed';
+
+
+modifikasyon
+-- update tasks set statue = 'pending' where tasks_id = 'A03';
+
+
+
+
+
+defi
+1- alter table tasks add column priority int not null;
+
+----update tasks set priority = 1 where task_id = 'A02';
+Pou m kontinye update done yo m ap sèlman chanje valè priority a ak tasks_id a.
+
+2- create table categories(id varchar(20) not null, completed char(3) not null, constraint id_catego foreign key(id) references tasks(task_id));
+
+3-select *from tasks where priority = 1;
+
+4- delete from tasks where statute = 'Completed';
